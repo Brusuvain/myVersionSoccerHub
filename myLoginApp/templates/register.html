@@ -1,0 +1,17 @@
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <div>
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                {{ form|crispy }}
+                <button class="btn btn-outline-info" type="submit">Register</button>
+            </fieldset>
+
+        </form>
+    </div>
+</body>
+</html>
