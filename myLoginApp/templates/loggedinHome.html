@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <div>
+    <form>
+    <select id="myTeamDropDown">
+        {% for i in teamnames %}
+        <option value="{{ i }}">{{ i }}</option>
+        {% endfor %}
+    </select>
+</form>
+</div>
+</body>
+</html>

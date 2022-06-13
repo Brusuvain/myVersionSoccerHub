@@ -15,7 +15,7 @@ class Credentials(models.Model):
 class Teams(models.Model):
     teamid=models.CharField(max_length=100,primary_key=True,null=False)
     teamname=models.CharField(max_length=1000,null=False)
-    coachid=models.OneToOneField(Credentials,on_delete=models.CASCADE)
+    coachid=models.OneToOneField(Credentials,on_delete=models.CASCADE,null=True)
 
 class Player(models.Model):
     playerid=models.OneToOneField(Credentials,on_delete=models.CASCADE,primary_key=True,null=False)
